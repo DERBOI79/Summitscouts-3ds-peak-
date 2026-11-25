@@ -52,7 +52,6 @@ export INCLUDE := $(foreach dir,$(INCLUDES),-I$(CURDIR)/$(dir)) \
 export LIBPATHS := $(foreach dir,$(LIBDIRS),-L$(dir)/lib)
 
 export APP_ICON := $(LIBCTRU)/default_icon.png
-export _3DSXDEPS := $(OUTPUT).smdh
 
 .PHONY: all clean
 
