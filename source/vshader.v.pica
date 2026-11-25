@@ -31,7 +31,7 @@
 
 	; fog factor = clamp(depth * fogp.x + fogp.y, 0, 1), depth = -view z
 	mul r2, fogp.xxxx, -r1.zzzz
-	add r2, r2, fogp.yyyy
+	add r2, fogp.yyyy, r2
 	max r2, zeros, r2
 	min r2, ones, r2
 
