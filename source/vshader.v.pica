@@ -36,7 +36,8 @@
 	min r2, ones, r2
 
 	; colour = mix(inclr * tint, fogc, factor)
-	mul r3, inclr, tint
+	mov r5, tint
+    mul r3, inclr, r5
 	add r4, fogc, -r3
 	mul r4, r4, r2
 	add outclr, r3, r4
